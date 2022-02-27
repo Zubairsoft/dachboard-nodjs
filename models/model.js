@@ -1,0 +1,16 @@
+const mongoose=require("mongoose")
+const passportLocalMongoose=require('passport-local-mongoose')
+const userSchema=require("../models/user_shema")
+const experinceSchema=require("../models/experince_schema")
+const skillSchema=require("../models/skills_schema")
+const serviceSehema=require("../models/service_shema")
+const projectSchema=require("../models/project_schema")
+const mediaSchema=require("../models/media_schema")
+
+userSchema.plugin(passportLocalMongoose);
+exports.userModel=mongoose.model("user",userSchema)
+exports.experinceModel=mongoose.model("experince",experinceSchema)
+exports.skillModel=mongoose.model("skill",skillSchema)
+exports.serviceModel=mongoose.model("service",serviceSehema)
+exports.projectModel=mongoose.model("project",projectSchema)
+exports.mediaModel=mongoose.model("media",mediaSchema)

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./head.ejs') %> 
+</head>
+<body>
+    <%- include('./navbar.ejs') %> 
+    <div style="display: flex;justify-content: center;width: 100%;">
+<form action="/home" method="post" style="margin: 10% auto; width: 50%;">
+    <h1 style="text-align: center;">Login</h1>
+    <input type="text" name="email" placeholder="Enter your email" style="width: 100%;"><br>
+    <input type="text" name="password" placeholder="Enter your password" style="width: 100%;"><br>
+    <div style="display: flex;justify-content: center;">
+    <span  ><a href=""  > Forget your password </a></span>
+    </div>
+    <div style="display: flex;justify-content: center;width:100%;">
+        
+    <input type="submit" style="width: 50%;" >
+</div>
+
+
+
+
+</form>
+</div>
+
+   
+        <p class="awsom">
+            
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fas fa-phone-square"></i>
+        </p>
+        
+        </div>
+    </div>
+        
+    
+  
+</section>
+<%- include("./footer.ejs") %> 
+</body>
+<script src="app.js"></script>
+</html>

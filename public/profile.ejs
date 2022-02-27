@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-success text-center py-1 mb-3">
+        <span class="text-white ">Dash boart</span>
+      
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+          
+    <h2>Personal data</h2>
+    <div class="card">
+        <img src="imgs/MYIMAGE.jpg " class="rounded-circle mx-auto   w-75" alt="" style="height: 75%;">
+        <h4 class="card-title mx-1">Full name</h4>
+        <p class="card-text" style="border-bottom: 1px solid;"><%= user.FullName %> </p>
+        <h4 class="card-title mx-1">Market Description</h4>
+        <p class="card-text" style="border-bottom: 1px solid;"><%= user.marketDes %> </p>
+        <h4 class="card-title mx-1">A bout </h4>
+        <p class="card-text" style="border-bottom: 1px solid;"><%= user.discription %> </p>
+        <h4 class="card-title mx-1">Email </h4>
+        <p class="card-text" style="border-bottom: 1px solid;"><%= user.email %> </p>
+        <a class="btn btn-success" onclick="return confirm('Are you sure you want to update your information?')" href="/edit">save</a>
+
+
+    </div>
+</div>
+ </div>
+ </div>
+    
+</body>
+</html>
